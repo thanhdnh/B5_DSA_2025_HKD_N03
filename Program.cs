@@ -121,5 +121,20 @@ public class Program{
         LinkedListNode<int> node20 = new LinkedListNode<int>(20);
         list.AddFirst(node1);
         list.AddAfter(node1, node20);
+
+        LinkedListNode<Book> q1 = new LinkedListNode<Book>(new Book("Book1", "Author1", 100));
+        LinkedList<Book> listbook = new LinkedList<Book>();
+        listbook.AddFirst(q1);
+    }
+}
+
+public class Book{
+    public string Title {get; set;}
+    public string Author {get; set;}
+    public int Price {get; set;}
+    public Book(string title, string author, int price){
+        Title = title;
+        Author = author;
+        Price = price;
     }
 }
