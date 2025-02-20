@@ -102,7 +102,7 @@ public class Program{
     public static void Main(string[] args)
     {
         Console.Clear();
-        LinkedList list = new LinkedList();
+        /*LinkedList list = new LinkedList();
         list.Insert("1", "Header");
         list.Insert("20", "1");
         list.Insert("3", "20");
@@ -114,6 +114,12 @@ public class Program{
         Console.WriteLine("Max: " + list.FindMax());
         Console.WriteLine("Sum: " + list.Sum());
         Console.WriteLine("Sum2: " + list.Sum2());
-        Console.WriteLine("Count: " + list.Count());
+        Console.WriteLine("Count: " + list.Count());*/
+
+        LinkedList<int> list = new LinkedList<int>();
+        LinkedListNode<int> node1 = new LinkedListNode<int>(1);
+        LinkedListNode<int> node20 = new LinkedListNode<int>(20);
+        list.AddFirst(node1);
+        list.AddAfter(node1, node20);
     }
 }
